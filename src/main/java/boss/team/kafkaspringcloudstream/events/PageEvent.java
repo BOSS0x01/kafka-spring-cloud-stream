@@ -1,4 +1,7 @@
 package boss.team.kafkaspringcloudstream.events;
 
-public record PageEvent() {
+import java.time.Duration;
+import java.util.Date;
+
+public record PageEvent(String name, String user, Date date, long duration) {
 }
